@@ -2,6 +2,7 @@ package at.kaindorf.demo_2023;
 
 import at.kaindorf.demo_2023.entity.ModEntityTypes;
 import at.kaindorf.demo_2023.entity.client.MagicGolemRender;
+import at.kaindorf.demo_2023.entity.client.WaterGolemRender;
 import at.kaindorf.demo_2023.init.BlockInit;
 import at.kaindorf.demo_2023.init.ItemInit;
 import com.mojang.logging.LogUtils;
@@ -95,6 +96,7 @@ public class Demo_2023 {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntityTypes.MAGIC_GOLEM.get(), MagicGolemRender::new);
+            EntityRenderers.register(ModEntityTypes.WATER_GOLEM.get(), WaterGolemRender::new);
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
