@@ -18,7 +18,7 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<MagicGolemEntity>> MAGIC_GOLEM =
             ENTITY_TYPES.register("magic_golem", () -> EntityType.Builder.of((MagicGolemEntity::new), MobCategory.MONSTER)
-                    .sized(0.4f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "magic_golem").toString()));
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "magic_golem").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

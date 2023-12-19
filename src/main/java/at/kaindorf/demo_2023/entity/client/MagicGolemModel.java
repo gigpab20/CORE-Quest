@@ -18,6 +18,6 @@ public class MagicGolemModel extends AnimatedGeoModel<MagicGolemEntity> {
 
     @Override
     public ResourceLocation getAnimationResource(MagicGolemEntity animatable) {
-        return new ResourceLocation(Demo_2023.MODID, "animations/magicgolem.animation.json");
+        return new ResourceLocation(Demo_2023.MODID, "animations/magic_golem.json");
     }
 }
