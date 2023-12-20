@@ -30,20 +30,18 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 import static software.bernie.geckolib3.util.GeckoLibUtil.createFactory;
 
-public class WaterGolemEntity extends Monster implements IAnimatable {
+public class FireGolemEntity extends Monster implements IAnimatable {
 
     private AnimationFactory factory = createFactory(this);
-    public WaterGolemEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
+    public FireGolemEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
         super(p_33002_, p_33003_);
     }
-
     public static AttributeSupplier setAttributes(){
         return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 50.00)
                 .add(Attributes.ATTACK_DAMAGE, 3.0f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 2.0f).build();
     }
-
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
@@ -59,13 +57,14 @@ public class WaterGolemEntity extends Monster implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event){
         if (event.isMoving()){
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watergolem.walk", ILoopType.EDefaultLoopTypes.LOOP));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.firegolem.walk", ILoopType.EDefaultLoopTypes.LOOP));
             return PlayState.CONTINUE;
         }
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watergolem.idle", ILoopType.EDefaultLoopTypes.LOOP));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.firegolem.idle", ILoopType.EDefaultLoopTypes.LOOP));
         return PlayState.CONTINUE;
     }
+
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController(this, "controller", 0, this::predicate));
