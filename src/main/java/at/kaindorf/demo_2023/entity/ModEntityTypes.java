@@ -3,6 +3,7 @@ package at.kaindorf.demo_2023.entity;
 import at.kaindorf.demo_2023.Demo_2023;
 import at.kaindorf.demo_2023.entity.custom.FireGolemEntity;
 import at.kaindorf.demo_2023.entity.custom.MagicGolemEntity;
+import at.kaindorf.demo_2023.entity.custom.RockGolemEntity;
 import at.kaindorf.demo_2023.entity.custom.WaterGolemEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -30,6 +31,11 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<FireGolemEntity>> FIRE_GOLEM =
             ENTITY_TYPES.register("fire_golem", () -> EntityType.Builder.of((FireGolemEntity::new), MobCategory.MONSTER)
                     .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "fire_golem").toString()));
+
+    public static final RegistryObject<EntityType<RockGolemEntity>> ROCK_GOLEM =
+            ENTITY_TYPES.register("rock_golem", () -> EntityType.Builder.of((RockGolemEntity::new), MobCategory.MONSTER)
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "rock_golem").toString()));
+
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
