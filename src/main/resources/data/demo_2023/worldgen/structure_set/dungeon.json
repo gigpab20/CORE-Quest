@@ -15,7 +15,7 @@
     "spacing": 20,
 
     // Minimum distance apart in chunks for spawn attempts
-    // MUST ALWAYS BE SMALLER THAN spacing ABOVE
+    // MUST ALWAYS BE SMALLER THAN spacing ABOVE !!!!!!!!
     "separation": 6,
 
     // The kind of placement to use. The other kind is ring based like strongholds use.
