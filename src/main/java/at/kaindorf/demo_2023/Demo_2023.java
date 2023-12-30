@@ -7,6 +7,7 @@ import at.kaindorf.demo_2023.entity.client.RockGolemRender;
 import at.kaindorf.demo_2023.entity.client.WaterGolemRender;
 import at.kaindorf.demo_2023.init.BlockInit;
 import at.kaindorf.demo_2023.init.ItemInit;
+import at.kaindorf.demo_2023.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -60,7 +61,7 @@ public class Demo_2023 {
         modEventBus.addListener(this::commonSetup);
 
 
-        ItemInit.ITEMS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
 
 
