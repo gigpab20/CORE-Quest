@@ -16,7 +16,6 @@ public class ModItems {
                     () -> new Item(new Item.Properties()
                             .stacksTo(1)
                             .tab(CreativeModeTab.TAB_MISC)));
-
     public static final RegistryObject<Item> Water_Core =
             ITEMS.register("water_core",
                     () -> new Item(new Item.Properties()
