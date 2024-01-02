@@ -11,7 +11,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class BlockInit {
 
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Demo_2023.MODID);
+    public static final DeferredRegister<Block> BLOCKS =
+            DeferredRegister.create(ForgeRegistries.BLOCKS, Demo_2023.MODID);
 
     //create Block and define its properties :
     public static final RegistryObject<Block> METAL_BOCK =
