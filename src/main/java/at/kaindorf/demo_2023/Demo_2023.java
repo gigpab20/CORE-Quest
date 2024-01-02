@@ -52,10 +52,8 @@ public class Demo_2023 {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
-
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);

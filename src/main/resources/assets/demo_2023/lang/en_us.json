@@ -1,4 +1,8 @@
 {
   "item.demo_2023.key_item" : "Golden Key",
-  "block.demo_2023.metal_block": "Block of Metal"
+  "block.demo_2023.metal_block": "Block of Metal",
+  "item.demo_2023.fire_core": "Fire Core",
+  "item.demo_2023.water_core": "Water Core",
+  "item.demo_2023.rock_core": "Rock Core",
+  "item.demo_2023.magic_core": "Magic Core"
 }
