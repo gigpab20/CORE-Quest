@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures" : {
-    "layer0": "demo_2023:items/gold-key"
-  }
-}
