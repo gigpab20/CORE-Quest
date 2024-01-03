@@ -98,7 +98,6 @@ public class ModItems {
     public static final RegistryObject<Item> WATER_CORE_CHESTPLATE_ITEM = ITEMS.register("water_core_chestplate", () ->
             new ChestplateItem(ModArmorMaterials.WATERCORE,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
     public static final RegistryObject<Item> WATER_CORE_BOOTS_ITEM = ITEMS.register("water_core_boots", () ->
             new BootsItem(ModArmorMaterials.WATERCORE,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
