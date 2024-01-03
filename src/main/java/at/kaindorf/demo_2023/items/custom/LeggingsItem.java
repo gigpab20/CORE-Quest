@@ -6,10 +6,10 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class MagicCoreHelmetItem extends ArmorItem {
+public class LeggingsItem extends ArmorItem {
 
-    public MagicCoreHelmetItem(ArmorMaterial material, Item.Properties properties) {
-        super(material, EquipmentSlot.HEAD, properties);
+    public LeggingsItem(ArmorMaterial material, Item.Properties properties) {
+        super(material, EquipmentSlot.LEGS, properties);
     }
 
     @Override

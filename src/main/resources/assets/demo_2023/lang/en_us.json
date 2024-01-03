@@ -4,5 +4,25 @@
   "item.demo_2023.fire_core": "Fire Core",
   "item.demo_2023.water_core": "Water Core",
   "item.demo_2023.rock_core": "Rock Core",
-  "item.demo_2023.magic_core": "Magic Core"
+  "item.demo_2023.magic_core": "Magic Core",
+
+  "item.demo_2023.magic_core_helmet": "Magic Core Helmet",
+  "item.demo_2023.magic_core_chestplate": "Magic Core Chestplate",
+  "item.demo_2023.magic_core_boots": "Magic Core Boots",
+  "item.demo_2023.magic_core_leggings": "Magic Core Leggings",
+
+  "item.demo_2023.fire_core_helmet": "Fire Core Helmet",
+  "item.demo_2023.fire_core_chestplate": "Fire Core Chestplate",
+  "item.demo_2023.fire_core_boots": "Fire Core Boots",
+  "item.demo_2023.fire_core_leggings": "Fire Core Leggings",
+
+  "item.demo_2023.rock_core_helmet": "Rock Core Helmet",
+  "item.demo_2023.rock_core_chestplate": "Rock Core Chestplate",
+  "item.demo_2023.rock_core_boots": "Rock Core Boots",
+  "item.demo_2023.rock_core_leggings": "Rock Core Leggings",
+
+  "item.demo_2023.water_core_helmet": "Water Core Helmet",
+  "item.demo_2023.water_core_chestplate": "Water Core Chestplate",
+  "item.demo_2023.water_core_boots": "Water Core Boots",
+  "item.demo_2023.water_core_leggings": "Water Core Leggings"
 }

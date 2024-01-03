@@ -1,18 +1,21 @@
 package at.kaindorf.demo_2023.items;
 
+import at.kaindorf.demo_2023.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     // Beispielwerte, bitte entsprechend anpassen
-    MAGICCORE("magiccore", 33, new int[]{2, 5, 6, 2}, 25, () -> Ingredient.of(Items.NETHERITE_INGOT), 0.5F, () -> SoundEvents.ARMOR_EQUIP_NETHERITE);
+    MAGICCORE("magiccore", 33, new int[]{2, 5, 6, 2}, 25, () -> Ingredient.of(ModItems.Magic_Core.get()), 0.5F, () -> SoundEvents.ARMOR_EQUIP_DIAMOND),
+    WATERCORE("watercore", 33, new int[]{2, 5, 6, 2}, 25, () -> Ingredient.of(ModItems.Water_Core.get()), 0.5F, () -> SoundEvents.ARMOR_EQUIP_DIAMOND),
+    ROCKCORE("rockcore", 33, new int[]{2, 5, 6, 2}, 25, () -> Ingredient.of(ModItems.Rock_Core.get()), 0.5F, () -> SoundEvents.ARMOR_EQUIP_DIAMOND),
+    FIRECORE("firecore", 33, new int[]{2, 5, 6, 2}, 25, () -> Ingredient.of(ModItems.Fire_Core.get()), 0.5F, () -> SoundEvents.ARMOR_EQUIP_DIAMOND);
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;

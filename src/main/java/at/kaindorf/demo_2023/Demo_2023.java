@@ -12,12 +12,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,16 +46,11 @@ public class Demo_2023 {
 
     public Demo_2023() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
         ModItems.ITEMS.register(modEventBus);
 
-
-        // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
@@ -74,7 +71,7 @@ public class Demo_2023 {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MODID, bus = Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
 
         @SubscribeEvent
