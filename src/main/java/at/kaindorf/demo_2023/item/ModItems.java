@@ -34,4 +34,14 @@ public class ModItems {
                     () -> new Item(new Item.Properties()
                             .stacksTo(1)
                             .tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> FireSword =
+            ITEMS.register("fire_sword",
+                    () -> new FireSword());
+
+    public static final RegistryObject<Item> Watersword =
+            ITEMS.register("water_sword", () -> new Watersword());
+
+    public static final RegistryObject<Item> MagicSword = ITEMS.register("magic_sword", () -> new Magicsword());
+    public static final RegistryObject<Item> Rocksword = ITEMS.register("rock_sword", () -> new Rocksword());
 }
