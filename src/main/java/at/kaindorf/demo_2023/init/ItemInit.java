@@ -52,14 +52,6 @@ public class ItemInit {
                     () -> new BlockItem(BlockInit.METAL_BOCK.get(),
                             new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
-    public static final RegistryObject<Item> FireSword =
-            ITEMS.register("fire_sword",
-                    () -> new FireSword());
 
-    public static final RegistryObject<Item> Watersword =
-            ITEMS.register("water_sword", () -> new Watersword());
-
-    public static final RegistryObject<Item> MagicSword = ITEMS.register("magic_sword", () -> new Magicsword());
-    public static final RegistryObject<Item> Rocksword = ITEMS.register("rock_sword", () -> new Rocksword());
 
 }
