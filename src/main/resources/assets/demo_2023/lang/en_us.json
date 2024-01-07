@@ -1,5 +1,13 @@
 {
-  "item.demo_2023.key_item" : "Golden Key",
   "item.demo_2023.magic_golem_spawn_egg" : "Magic Golem Spawn Egg",
-  "block.demo_2023.metal_block": "Block of Metal"
+  "block.demo_2023.metal_block": "Block of Metal",
+  "item.demo_2023.fire_core": "Fire Core",
+  "item.demo_2023.water_core": "Water Core",
+  "item.demo_2023.rock_core": "Rock Core",
+  "item.demo_2023.magic_core": "Magic Core",
+  "item.demo_2023.fire_sword": "Feuerschwert",
+  "item.demo_2023.magic_sword": "Zauberstab",
+  "item.demo_2023.rock_sword": "Gesteinsswert",
+  "item.demo_2023.water_sword": "Wasserschwert"
+
 }
