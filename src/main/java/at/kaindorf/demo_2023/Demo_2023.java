@@ -1,5 +1,10 @@
 package at.kaindorf.demo_2023;
 
+import at.kaindorf.demo_2023.entity.ModEntityTypes;
+import at.kaindorf.demo_2023.entity.client.MagicGolemRender;
+import at.kaindorf.demo_2023.entity.client.WaterGolemRender;
+import at.kaindorf.demo_2023.entity.client.FireGolemRender;
+import at.kaindorf.demo_2023.entity.client.RockGolemRender;
 import at.kaindorf.demo_2023.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
