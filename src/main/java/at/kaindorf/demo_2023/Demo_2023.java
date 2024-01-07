@@ -1,9 +1,9 @@
 package at.kaindorf.demo_2023;
 
-
 import at.kaindorf.demo_2023.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -27,6 +27,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Demo_2023.MODID)
@@ -52,13 +53,17 @@ public class Demo_2023 {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModItems.ITEMS.register(modEventBus);
 
+        ModItems.ITEMS.register(modEventBus);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
+
+        ModEntityTypes.register(modEventBus);
+
+        GeckoLib.initialize();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -84,6 +89,10 @@ public class Demo_2023 {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntityTypes.MAGIC_GOLEM.get(), MagicGolemRender::new);
+            EntityRenderers.register(ModEntityTypes.WATER_GOLEM.get(), WaterGolemRender::new);
+            EntityRenderers.register(ModEntityTypes.FIRE_GOLEM.get(), FireGolemRender::new);
+            EntityRenderers.register(ModEntityTypes.ROCK_GOLEM.get(), RockGolemRender::new);
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
