@@ -5,6 +5,6 @@ import net.minecraft.world.item.SwordItem;
 
 public class Magicsword extends SwordItem {
     public Magicsword() {
-        super(new CustomToolMagic(), 11, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+        super(new CustomToolMagic(), 10, -1.0F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
     }
 }

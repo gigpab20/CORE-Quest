@@ -6,6 +6,6 @@ import net.minecraft.world.item.Tiers;
 
 public class Rocksword extends SwordItem {
     public Rocksword() {
-        super(new CustomToolRock(), 11, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+        super(new CustomToolRock(), 12, -2.0F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
     }
 }

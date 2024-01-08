@@ -5,9 +5,9 @@
   "item.demo_2023.water_core": "Water Core",
   "item.demo_2023.rock_core": "Rock Core",
   "item.demo_2023.magic_core": "Magic Core",
-  "item.demo_2023.fire_sword": "Feuerschwert",
-  "item.demo_2023.magic_sword": "Zauberstab",
-  "item.demo_2023.rock_sword": "Gesteinsswert",
-  "item.demo_2023.water_sword": "Wasserschwert"
+  "item.demo_2023.fire_sword": "Fire Sword",
+  "item.demo_2023.magic_sword": "Magic Dagger",
+  "item.demo_2023.rock_sword": "Rock Scythe",
+  "item.demo_2023.water_sword": "Water Sword"
 
 }
