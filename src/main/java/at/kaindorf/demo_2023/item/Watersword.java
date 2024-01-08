@@ -7,6 +7,7 @@ import net.minecraft.world.item.Tiers;
 public class Watersword extends SwordItem {
 
     public Watersword() {
-        super(Tiers.DIAMOND, 44, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+        super(new CustomToolWater(), 11, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
     }
+
 }

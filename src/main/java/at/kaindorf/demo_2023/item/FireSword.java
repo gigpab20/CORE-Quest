@@ -11,7 +11,7 @@ public class FireSword extends SwordItem {
         // Die super-Methode ruft den Konstruktor der SwordItem-Klasse auf.
         // Hier wird das Material des Schwertes festgelegt (z.B. DIAMOND, GOLD, usw.)
 
-        super(Tiers.DIAMOND, 44, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+        super(new CustomToolFire(), 11, -1.4F, new Properties().tab(CreativeModeTab.TAB_COMBAT));
 
         // Der dritte Parameter ist die Angriffsgeschwindigkeit des Schwertes.
         // Der Standardwert (-2.4F) entspricht der des Diamantschwerts.
