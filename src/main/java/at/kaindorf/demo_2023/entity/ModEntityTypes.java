@@ -1,10 +1,7 @@
 package at.kaindorf.demo_2023.entity;
 
 import at.kaindorf.demo_2023.Demo_2023;
-import at.kaindorf.demo_2023.entity.custom.FireGolemEntity;
-import at.kaindorf.demo_2023.entity.custom.MagicGolemEntity;
-import at.kaindorf.demo_2023.entity.custom.RockGolemEntity;
-import at.kaindorf.demo_2023.entity.custom.WaterGolemEntity;
+import at.kaindorf.demo_2023.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -35,6 +32,20 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<RockGolemEntity>> ROCK_GOLEM =
             ENTITY_TYPES.register("rock_golem", () -> EntityType.Builder.of((RockGolemEntity::new), MobCategory.MONSTER)
                     .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "rock_golem").toString()));
+
+    public static final RegistryObject<EntityType<FireServitorEntity>> FIRE_SERVITOR =
+            ENTITY_TYPES.register("fire_servitor", () -> EntityType.Builder.of((FireServitorEntity::new), MobCategory.MONSTER)
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "fire_servitor").toString()));
+
+    public static final RegistryObject<EntityType<WaterServitorEntity>> WATER_SERVITOR =
+            ENTITY_TYPES.register("water_servitor", () -> EntityType.Builder.of((WaterServitorEntity::new), MobCategory.MONSTER)
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "water_servitor").toString()));
+    public static final RegistryObject<EntityType<RockServitorEntity>> ROCK_SERVITOR =
+            ENTITY_TYPES.register("rock_servitor", () -> EntityType.Builder.of((RockServitorEntity::new), MobCategory.MONSTER)
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "rock_servitor").toString()));
+    public static final RegistryObject<EntityType<MagicServitorEntity>> MAGIC_SERVITOR =
+            ENTITY_TYPES.register("magic_servitor", () -> EntityType.Builder.of((MagicServitorEntity::new), MobCategory.MONSTER)
+                    .sized(2.0f, 1.5f).build(new ResourceLocation(Demo_2023.MODID, "magic_servitor").toString()));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,10 +1,7 @@
 package at.kaindorf.demo_2023;
 
 import at.kaindorf.demo_2023.entity.ModEntityTypes;
-import at.kaindorf.demo_2023.entity.client.MagicGolemRender;
-import at.kaindorf.demo_2023.entity.client.WaterGolemRender;
-import at.kaindorf.demo_2023.entity.client.FireGolemRender;
-import at.kaindorf.demo_2023.entity.client.RockGolemRender;
+import at.kaindorf.demo_2023.entity.client.*;
 import at.kaindorf.demo_2023.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -47,17 +44,11 @@ public class Demo_2023 {
     // Create a Deferred Register to hold Items which will all be registered under the "demo_2023" namespace
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
-    // Creates a new Block with the id "demo_2023:example_block", combining the namespace and path
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
-    // Creates a new BlockItem with the id "demo_2023:example_block", combining the namespace and path
-    public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-
     public Demo_2023() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
 
         ModItems.ITEMS.register(modEventBus);
 
@@ -98,6 +89,10 @@ public class Demo_2023 {
             EntityRenderers.register(ModEntityTypes.WATER_GOLEM.get(), WaterGolemRender::new);
             EntityRenderers.register(ModEntityTypes.FIRE_GOLEM.get(), FireGolemRender::new);
             EntityRenderers.register(ModEntityTypes.ROCK_GOLEM.get(), RockGolemRender::new);
+            EntityRenderers.register(ModEntityTypes.FIRE_SERVITOR.get(), FireServitorRender::new);
+            EntityRenderers.register(ModEntityTypes.WATER_SERVITOR.get(), WaterServitorRender::new);
+            EntityRenderers.register(ModEntityTypes.ROCK_SERVITOR.get(), RockServitorRender::new);
+            EntityRenderers.register(ModEntityTypes.MAGIC_SERVITOR.get(), MagicServitorRender::new);
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
