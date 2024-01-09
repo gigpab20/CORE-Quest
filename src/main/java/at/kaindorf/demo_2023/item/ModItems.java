@@ -56,6 +56,20 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.WATER_GOLEM, 0x26333d, 0x3df3f3,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<ForgeSpawnEggItem> WATER_SERVITOR_SPAWN_EGG = ITEMS.register("water_servitor_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.WATER_SERVITOR, 0x26333d, 0x3df3f3,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<ForgeSpawnEggItem> ROCK_SERVITOR_SPAWN_EGG = ITEMS.register("rock_servitor_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROCK_SERVITOR, 0x26333d, 0x3df3f3,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<ForgeSpawnEggItem> FIRE_SERVITOR_SPAWN_EGG = ITEMS.register("fire_servitor_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.FIRE_SERVITOR, 0x26333d, 0x3df3f3,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<ForgeSpawnEggItem> MAGIC_SERVITOR_SPAWN_EGG = ITEMS.register("magic_servitor_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MAGIC_SERVITOR, 0x26333d, 0x3df3f3,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> FireSword =
             ITEMS.register("fire_sword",
                     () -> new FireSword());
