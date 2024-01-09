@@ -3,6 +3,8 @@ package at.kaindorf.demo_2023.item;
 import at.kaindorf.demo_2023.Demo_2023;
 
 import at.kaindorf.demo_2023.entity.ModEntityTypes;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -56,6 +58,68 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.WATER_GOLEM, 0x26333d, 0x3df3f3,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> FIRE_HELMET = ITEMS.register("fire_helmet",
+            () -> new ArmorItem(ModArmorMaterial.FIRE, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> FIRE_CHESTPLATE = ITEMS.register("fire_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.FIRE, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> FIRE_LEGGINGS = ITEMS.register("fire_leggings",
+            () -> new ArmorItem(ModArmorMaterial.FIRE, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+
+    public static final RegistryObject<Item> FIRE_BOOTS = ITEMS.register("fire_boots",
+            () -> new ArmorItem(ModArmorMaterial.FIRE, EquipmentSlot.FEET,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> WATER_HELMET = ITEMS.register("water_helmet",
+            () -> new ArmorItem(ModArmorMaterial.WATER, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> WATER_CHESTPLATE = ITEMS.register("water_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.WATER, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> WATER_LEGGINGS = ITEMS.register("water_leggings",
+            () -> new ArmorItem(ModArmorMaterial.WATER, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> WATER_BOOTS = ITEMS.register("water_boots",
+            () -> new ArmorItem(ModArmorMaterial.WATER, EquipmentSlot.FEET,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> ROCK_HELMET = ITEMS.register("rock_helmet",
+            () -> new ArmorItem(ModArmorMaterial.ROCK, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> ROCK_CHESTPLATE = ITEMS.register("rock_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.ROCK, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> ROCK_LEGGINGS = ITEMS.register("rock_leggings",
+            () -> new ArmorItem(ModArmorMaterial.ROCK, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> ROCK_BOOTS = ITEMS.register("rock_boots",
+            () -> new ArmorItem(ModArmorMaterial.ROCK, EquipmentSlot.FEET,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> MAGIC_HELMET = ITEMS.register("magic_helmet",
+            () -> new ArmorItem(ModArmorMaterial.MAGIC, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> MAGIC_CHESTPLATE = ITEMS.register("magic_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.MAGIC, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> MAGIC_LEGGINGS = ITEMS.register("magic_leggings",
+            () -> new ArmorItem(ModArmorMaterial.MAGIC, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> MAGIC_BOOTS = ITEMS.register("magic_boots",
+            () -> new ArmorItem(ModArmorMaterial.MAGIC, EquipmentSlot.FEET,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> FireSword =
             ITEMS.register("fire_sword",
                     () -> new FireSword());
@@ -65,5 +129,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> MagicSword = ITEMS.register("magic_sword", () -> new Magicsword());
     public static final RegistryObject<Item> Rocksword = ITEMS.register("rock_sword", () -> new Rocksword());
+
+
 
 }
