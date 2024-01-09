@@ -1,5 +1,8 @@
 {
   "item.demo_2023.magic_golem_spawn_egg" : "Magic Golem Spawn Egg",
+  "item.demo_2023.fire_golem_spawn_egg" : "Fire Golem Spawn Egg",
+  "item.demo_2023.water_golem_spawn_egg" : "Water Golem Spawn Egg",
+  "item.demo_2023.rock_golem_spawn_egg" : "Rock Golem Spawn Egg",
   "block.demo_2023.metal_block": "Block of Metal",
   "item.demo_2023.fire_core": "Fire Core",
   "item.demo_2023.water_core": "Water Core",
