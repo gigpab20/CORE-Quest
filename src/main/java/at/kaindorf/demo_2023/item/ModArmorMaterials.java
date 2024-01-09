@@ -1,6 +1,7 @@
 package at.kaindorf.demo_2023.item;
 
 import at.kaindorf.demo_2023.Demo_2023;
+import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -10,31 +11,29 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
+import java.util.EnumMap;
 import java.util.function.Supplier;
 
 
-public enum ModArmorMaterial implements ArmorMaterial {
-
-
-    FIRE("fire", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
+public enum ModArmorMaterials implements ArmorMaterial {
+    FIRE(Demo_2023.MODID + ":fire", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
             4.0F, 0.6F, () -> {
         return Ingredient.of(ModItems.Fire_Core.get());
     }),
-    WATER("water", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
+    WATER(Demo_2023.MODID + ":water", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
             4.0F, 0.6F, () -> {
         return Ingredient.of(ModItems.Water_Core.get());
     }),
-    ROCK("rock", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
+    ROCK(Demo_2023.MODID + ":rock", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
             4.0F, 0.6F, () -> {
         return Ingredient.of(ModItems.Rock_Core.get());
     }),
-    MAGIC("magic", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
+    MAGIC(Demo_2023.MODID + ":magic", 40, new int[]{10, 10, 13, 10}, 14, SoundEvents.ARMOR_EQUIP_GOLD,
             4.0F, 0.6F, () -> {
         return Ingredient.of(ModItems.Magic_Core.get());
     });
 
-
-    private static final int[] HEALTH_PER_SLOT = new int[]{10, 10, 10, 10};
+    private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] slotProtections;
@@ -42,56 +41,47 @@ public enum ModArmorMaterial implements ArmorMaterial {
     private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
-    private final Supplier<Ingredient> repairIngredient;
+    private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    ModArmorMaterial(String name, int durabilityMultiplier, int[] slotProtections, int enchantmentValue, SoundEvent sound,
-                     float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
-        this.name = name;
-        this.durabilityMultiplier = durabilityMultiplier;
-        this.slotProtections = slotProtections;
-        this.enchantmentValue = enchantmentValue;
-        this.sound = sound;
-        this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = repairIngredient;
+    private ModArmorMaterials(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
+        this.name = p_40474_;
+        this.durabilityMultiplier = p_40475_;
+        this.slotProtections = p_40476_;
+        this.enchantmentValue = p_40477_;
+        this.sound = p_40478_;
+        this.toughness = p_40479_;
+        this.knockbackResistance = p_40480_;
+        this.repairIngredient = new LazyLoadedValue<>(p_40481_);
     }
 
-    @Override
-    public int getDurabilityForSlot(EquipmentSlot p_40410_) {
-        return durabilityMultiplier;
+    public int getDurabilityForSlot(EquipmentSlot p_40484_) {
+        return HEALTH_PER_SLOT[p_40484_.getIndex()] * this.durabilityMultiplier;
     }
 
-    @Override
-    public int getDefenseForSlot(EquipmentSlot p_40411_) {
-        return this.slotProtections[p_40411_.getIndex()];
+    public int getDefenseForSlot(EquipmentSlot p_40487_) {
+        return this.slotProtections[p_40487_.getIndex()];
     }
 
-    @Override
     public int getEnchantmentValue() {
         return this.enchantmentValue;
     }
 
-    @Override
     public SoundEvent getEquipSound() {
         return this.sound;
     }
 
-    @Override
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
 
-    @Override
     public String getName() {
-        return Demo_2023.MODID +":" + this.name;
+        return this.name;
     }
 
-    @Override
     public float getToughness() {
         return this.toughness;
     }
 
-    @Override
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
