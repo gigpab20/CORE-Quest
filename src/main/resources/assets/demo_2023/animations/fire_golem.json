@@ -1,6 +1,24 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.firegolem.attack": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-114.10445, -1.71773, -15.7019]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-112.87835, -4.98093, 8.6822]
+					}
+				}
+			}
+		},
 		"animation.firegolem.walk": {
 			"loop": true,
 			"animation_length": 1,
