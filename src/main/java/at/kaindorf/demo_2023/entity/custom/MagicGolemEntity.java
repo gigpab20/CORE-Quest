@@ -41,9 +41,9 @@ public class MagicGolemEntity extends Monster implements IAnimatable {
 
     public static AttributeSupplier setAttributes(){
         return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 50.00)
-                .add(Attributes.ATTACK_DAMAGE, 3.0f)
-                .add(Attributes.ATTACK_SPEED, 1.0f)
-                .add(Attributes.MOVEMENT_SPEED, 2.0f).build();
+                .add(Attributes.ATTACK_DAMAGE, 5.0f)
+                .add(Attributes.ATTACK_SPEED, 2.2f)
+                .add(Attributes.MOVEMENT_SPEED, 2.3f).build();
     }
 
     @Override
