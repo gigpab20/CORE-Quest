@@ -63,17 +63,11 @@
 				{
 					"name": "left_arm",
 					"pivot": [5, 22, 0],
-					"mirror": true,
-					"cubes": [
-						{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [40, 46]}
-					]
+					"mirror": true
 				},
 				{
 					"name": "right_arm",
-					"pivot": [-5, 22, 0],
-					"cubes": [
-						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [40, 46]}
-					]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "left_leg",
