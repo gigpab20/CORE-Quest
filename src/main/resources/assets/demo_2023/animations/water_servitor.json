@@ -1,6 +1,17 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.waterservitor.attack": {
+			"animation_length": 0.25,
+			"bones": {
+				"arms": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-25, 0, 0]
+					}
+				}
+			}
+		},
 		"animation.water_servitor.idle": {
 			"loop": true
 		},
