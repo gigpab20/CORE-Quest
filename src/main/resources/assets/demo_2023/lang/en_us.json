@@ -8,6 +8,21 @@
   "item.demo_2023.fire_sword": "Feuerschwert",
   "item.demo_2023.magic_sword": "Zauberstab",
   "item.demo_2023.rock_sword": "Gesteinsswert",
-  "item.demo_2023.water_sword": "Wasserschwert"
-
+  "item.demo_2023.water_sword": "Wasserschwert",
+  "item.demo_2023.fire_helmet": "Feuerhelm",
+  "item.demo_2023.fire_boots": "Feuerschlapfen",
+  "item.demo_2023.fire_leggings": "Feuerhosn",
+  "item.demo_2023.fire_chestplate": "Feuerleiberl",
+  "item.demo_2023.water_helmet": "Wasserhelm",
+  "item.demo_2023.water_chestplate": "Wasserleiberl",
+  "item.demo_2023.water_leggings": "Wasserhose",
+  "item.demo_2023.water_boots": "Wasserschlapfen",
+  "item.demo_2023.rock_helmet": "Gesteinhelm",
+  "item.demo_2023.rock_chestplate": "Gesteinleiberl",
+  "item.demo_2023.rock_leggings": "Gesteinhose",
+  "item.demo_2023.rock_boots": "Gesteinstiefel",
+  "item.demo_2023.magic_helmet": "Magiehelm",
+  "item.demo_2023.magic_chestplate": "Magieleiberl",
+  "item.demo_2023.magic_leggings": "Magiehose",
+  "item.demo_2023.magic_boots": "Magiestiefel"
 }
