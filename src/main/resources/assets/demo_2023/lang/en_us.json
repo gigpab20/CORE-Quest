@@ -12,5 +12,21 @@
   "item.demo_2023.magic_sword": "Magic Dagger",
   "item.demo_2023.rock_sword": "Rock Scythe",
   "item.demo_2023.water_sword": "Water Sword"
+  "item.demo_2023.fire_helmet": "Fire Helmet",
+  "item.demo_2023.fire_boots": "Fire Boots",
+  "item.demo_2023.fire_leggings": "Fire Leggings",
+  "item.demo_2023.fire_chestplate": "Fire Chestplate",
+  "item.demo_2023.water_helmet": "Water Helmet",
+  "item.demo_2023.water_chestplate": "Water Chestplate",
+  "item.demo_2023.water_leggings": "Water Leggings",
+  "item.demo_2023.water_boots": "Water Boots",
+  "item.demo_2023.rock_helmet": "Rock Helmet",
+  "item.demo_2023.rock_chestplate": "Rock Chestplate",
+  "item.demo_2023.rock_leggings": "Rock Leggings",
+  "item.demo_2023.rock_boots": "Rock Boots",
+  "item.demo_2023.magic_helmet": "Magic Helmet",
+  "item.demo_2023.magic_chestplate": "Magic Chestplate",
+  "item.demo_2023.magic_leggings": "Magic Leggings",
+  "item.demo_2023.magic_boots": "Magic Boots"
 
 }
