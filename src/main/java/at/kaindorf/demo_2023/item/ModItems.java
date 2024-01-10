@@ -21,25 +21,25 @@ public class ModItems {
     public static final RegistryObject<Item> Magic_Core =
             ITEMS.register("magic_core",
                     () -> new Item(new Item.Properties()
-                            .stacksTo(1)
+                            .stacksTo(16)
                             .tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> Water_Core =
             ITEMS.register("water_core",
                     () -> new Item(new Item.Properties()
-                            .stacksTo(1)
+                            .stacksTo(16)
                             .tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> Fire_Core =
             ITEMS.register("fire_core",
                     () -> new Item(new Item.Properties()
-                            .stacksTo(1)
+                            .stacksTo(16)
                             .tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> Rock_Core =
             ITEMS.register("rock_core",
                     () -> new Item(new Item.Properties()
-                            .stacksTo(1)
+                            .stacksTo(16)
                             .tab(CreativeModeTab.TAB_MISC)));
   
   public static final RegistryObject<ForgeSpawnEggItem> MAGIC_GOLEM_SPAWN_EGG = ITEMS.register("magic_golem_spawn_egg",
