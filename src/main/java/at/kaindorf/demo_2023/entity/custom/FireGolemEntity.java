@@ -40,7 +40,7 @@ public class FireGolemEntity extends Monster implements IAnimatable {
         return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 50.00)
                 .add(Attributes.ATTACK_DAMAGE, 3.0f)
                 .add(Attributes.ATTACK_SPEED, 1.5f)
-                .add(Attributes.MOVEMENT_SPEED, 0.9f).build();
+                .add(Attributes.MOVEMENT_SPEED, 0.2f).build();
     }
     @Override
     protected void registerGoals() {
