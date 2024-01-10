@@ -1,6 +1,24 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.watergolem.attack": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-114.10445, -1.71773, -15.7019]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-112.87835, -4.98093, 8.6822]
+					}
+				}
+			}
+		},
 		"animation.watergolem.walk": {
 			"loop": true,
 			"animation_length": 1,
