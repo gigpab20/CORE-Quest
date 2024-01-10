@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.waterservitor.attack": {
+			"animation_length": 0.25,
+			"bones": {
+				"arms": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-25, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.water_servitor.idle": {
+			"loop": true
+		},
+		"animation.water_servitor.walk": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"left_leg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-21, 0, 0],
+						"1.0": [21, 0, 0],
+						"1.5": [0, 0, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [21, 0, 0],
+						"1.0": [-21, 0, 0],
+						"1.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}
